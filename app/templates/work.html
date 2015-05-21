@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div id="work">
+
+  <!-- Fibonacci -->
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="{{url_for('static', filename='img/fibonacci.png')}}" />
+    </div>
+
+    <div class="col-sm-8">
+      <h1>Fibonacci Counter</h1>
+      <p>A simple Fibonacci counter that automatically builds the famous numerical sequence. This was the result of my first foray into working with the React framework.</p>
+      <ul>
+        <li><i class="ion-android-globe"></i><a href="http://fibonacci.ceskavich.com/">See it live</a></li>
+        <li><i class="ion-social-github"></i><a href="https://github.com/bceskavich/fibonacci">View the source</a></li>
+      </ul>
+    </div>
+  </div><!-- / Fibonacci -->
+
+  <hr />
+
+  <!-- Drought -->
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="{{url_for('static', filename='img/drought.png')}}" />
+    </div>
+
+    <div class="col-sm-8">
+      <h1>Droughts in the United States &amp; California</h1>
+      <p>For my final project in an introductory data visualization course, I produced a poster focusing on the ongoing drought in California. On my own, I also created an interactive web version which focuses on drought trends in the United States from 2000 to the present day. I used Python and R to scrape and analyze the data, and then used the D3 Framework and Adobe Illustrator to render the final visualizations.</p>
+      <ul>
+        <li><i class="ion-android-globe"></i><a href="http://drought.ceskavich.com/">See it live</a></li>
+        <li><i class="ion-document-text"></i><a href="{{url_for('static', filename='files/drought.pdf')}}">View the poster</a></li>
+        <li><i class="ion-social-github"></i><a href="https://github.com/bceskavich/us-drought">View the source</a></li>
+      </ul>
+    </div>
+  </div><!-- / Drought -->
+
+  <hr />
+
+  <!-- NEXIS -->
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="{{url_for('static', filename='img/nexis.png')}}" />
+    </div>
+
+    <div class="col-sm-8">
+      <h1>NEXIS Research Center</h1>
+      <p>I designed and built a new website for NEXIS, a interdisciplinary student research center thru the Syracuse University iSchool. The website was the first implementation of a new design style for the lab, so I was able to define new standards for the team of students.</p>
+      <ul>
+        <li><i class="ion-android-globe"></i><a href="http://nexis.ischool.syr.edu/">See it live</a></li>
+        <li><i class="ion-social-github"></i><a href="https://github.com/rosslazer/thewall">View the source</a></li>
+      </ul>
+    </div>
+  </div><!-- / NEXIS -->
+
+  <hr />
+
+  <!-- AT&T -->
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="{{url_for('static', filename='img/hu.jpg')}}" />
+    </div>
+
+    <div class="col-sm-8">
+      <h1>Hack Upstate</h1>
+      <p>I started freelancing with Hack Upstate in June 2014 and continue to do so to this day. A big part of my effort is building and maintaining our web presence. I've also worked closely to maintain our partnership with AT&amp;T as we worked together on three civic hackathons: #ATTWNY,  #ATTCNY, and #TechValleyATT.</p>
+      <ul>
+        <li><i class="ion-android-globe"></i><a href="http://www.hackupstate.com">Hack Upstate Home</a></li>
+        <li><i class="ion-android-globe"></i><a href="http://attwny.hackupstate.com/">#ATTWNY</a></li>
+        <li><i class="ion-android-globe"></i><a href="http://attcny.hackupstate.com/">#ATTCNY</a></li>
+        <li><i class="ion-android-globe"></i><a href="http://techvalleyatt.hackupstate.com/">#TechValleyATT</a></li>
+      </ul>
+    </div>
+  </div><!-- / AT&T -->
+
+  <hr />
+
+  <!-- Grov -->
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="{{url_for('static', filename='img/grov.jpg')}}" />
+    </div>
+
+    <div class="col-sm-8">
+      <h1>Grov</h1>
+      <p>A personal project I worked on for NEXIS, Grov uses D3 and the Twitter REST API to render a Twitter user network visualization. I put together an (admittedly clunky) network graph, where larger nodes are shared followers among the users who have logged in. Being one of my first attempts with D3, the visualization is a bit bloated. Still, it was great fun!</p>
+      <ul>
+        <li><i class="ion-android-globe"></i><a href="http://grov.ceskavich.com/">See it live</a></li>
+        <li><i class="ion-social-github"></i><a href="https://github.com/bceskavich/grov">View the source</a></li>
+      </ul>
+    </div>
+  </div><!-- / Grov -->
+
+  <hr />
+
+  <!-- Bulletin -->
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="{{url_for('static', filename='img/bulletin.png')}}" />
+    </div>
+
+    <div class="col-sm-8">
+      <h1>Bulletin</h1>
+      <p>Bulletin was part of an independent study I did in Spring 2013 on news APIs. I built a web app that scrapes the web for content related to stories saved in a user’s Pocket account. It was one of my first forays into the Flask framework, and I also worked with several different news APIs to get it going.</p>
+      <ul>
+        <li><i class="ion-social-github"></i><a href="https://github.com/bceskavich/bulletin">View the source</a></li>
+      </ul>
+    </div>
+  </div><!-- / Bulletin -->
+
+</div><!-- /#work -->
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+  $(function(){
+    $(".work-nav").attr("class", "active");
+  });
+</script>
+{% endblock %}

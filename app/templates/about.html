@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row" id="bio">
+  <div class="col-sm-4">
+    <img src="{{url_for('static', filename='img/headshot.jpg')}}" />
+  </div>
+
+  <div class="col-sm-8">
+    <h1>Billy Ceskavich</h1>
+    <p>Hey there, I’m Billy. I’m an Engagement Fellow at Syracuse University, pursuing my Masters in Information Management. Currently I'm an intern at Made by Many in New York, where I write code and build products. At Syracuse, I split my time between classes, writing software for the BITS Lab, and working on fun side projects with the iSchool’s NEXIS Lab. I'm a sucker for open data, quality products, a well-crafted sandwich, and fancy socks. Feel free to reach out if you want to hear me rant about one of the aformentioned topics, or something else!</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+  $(function(){
+    $(".about-nav").attr("class", "active");
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,5 @@
+*.pyc
+*.mo
+*.db
+env
+node_modules

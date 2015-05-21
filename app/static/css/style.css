@@ -1,0 +1,352 @@
+/* ========== GENERAL ========== */
+
+body {
+  background: white;
+  color: #333333;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #006aab;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav,
+.content {
+    max-width: 1024px;
+    margin: 0px auto;
+}
+
+.content {
+    clear: both;
+}
+
+#home,
+#resume,
+#bio,
+#work {
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media only screen and (max-width: 499px) {
+    #home,
+    #resume,
+    #bio,
+    #work {
+        padding-top: 25px;
+    }
+}
+
+/* ========== TOP NAV ========== */
+
+nav {
+    font-family: "Alegreya Sans";
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+    margin: 15px 0px;
+    display: block;
+    font-weight: normal;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav li:hover,
+nav li.active {
+    border-top: 3px solid #006aab;
+}
+
+nav li.active a,
+nav li:hover a {
+    color: #006aab;
+}
+
+nav li {
+    border-top: 3px solid white;
+    float: left;
+    margin: 0px 15px;
+}
+
+.navBrand {
+    float: left;
+}
+
+.navItems,
+.navPancake {
+    float: right;
+}
+
+.navPancake,
+.navItemsMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 499px) {
+    .navBrand {
+        border-top: 3px solid #006aab;
+    }
+
+    .navItems {
+        display: none;
+    }
+
+    .navItemsMobile {
+        float: none;
+        position: relative;
+        top: -224px;
+        transition: 0.2s;
+        width: 100%;
+    }
+
+    .navItemsMobile {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navItemsMobile li {
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .navItemsMobile a {
+        text-decoration: none;
+        color: #333;
+        font-size: 25px;
+        margin: 15px 0px;
+        display: block;
+        font-weight: normal;
+    }
+
+    nav li,
+    nav li.active,
+    nav li:hover {
+        border-top: none;
+    }
+
+    nav li.active a,
+    nav li:hover a {
+        color: #333;
+    }
+
+    .navPancake li a {
+        font-size: 30px;
+    }
+
+    .navPancake {
+        display: block;
+    }
+
+    nav,
+    .content {
+        position: relative;
+        top: -224px;
+        transition: 0.2s;
+    }
+
+    .mobileMenuOpened {
+        top: 0px;
+        transition: 0.2s;
+    }
+
+}
+
+/* ========== HOMEPAGE CONTENT ========== */
+
+#home {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#home h1 {
+    margin: 0px;
+    font-weight: 700;
+    font-family: "Alegreya Sans";
+    font-size: 70px;
+}
+
+#home #name {
+    color: #006aab;
+}
+
+#home #email {
+    font-size: 27.5px;
+    font-style: italic;
+    margin: 35px 0px;
+}
+
+#home ul {
+    font-size: 19px;
+    line-height: 1.5;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#home #homeLinks {
+    margin-top: 35px;
+    font-size: 65px;
+}
+
+#home #homeLinks li {
+    display: inline;
+    margin-right: 30px;
+}
+
+#home #homeLinks li a {
+    color: #333;
+}
+
+#home #homeLinks li a:hover {
+    color: #006aab;
+}
+
+@media only screen and (max-width: 499px) {
+    #home h1 {
+        font-size: 50px;
+    }
+
+    #home #email {
+        font-size: 22px;
+    }
+
+    #home ul {
+        font-size: 15px;
+    }
+
+    #home #homeLinks {
+        font-size: 35px;
+    }
+}
+
+/* ========== RESUME CONTENT ========== */
+
+#resume h1 {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    border-bottom: 1px solid #006aab;
+}
+
+.resume-item h4 {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.resume-item #second {
+    padding-top: 0px;
+}
+
+.resume-item li {
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 499px) {
+    .resume-item h4,
+    .resume-item p {
+        line-height: 1.25;
+    }
+}
+
+/* ========== BIO / WORK CONTENT ========== */
+
+#bio img,
+#work img {
+    max-width: 100%;
+}
+
+#bio img {
+    border-radius: 100%;
+}
+
+#work img {
+}
+
+#bio h1,
+#work h1 {
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+    font-family: "Alegreya Sans";
+    font-size: 35px;
+}
+
+#bio p,
+#work p {
+    line-height: 1.5;
+}
+
+#bio p {
+    font-size: 18px;
+}
+
+#work p {
+    font-size: 15px;
+}
+
+#work > div {
+    margin-bottom: 50px;
+}
+
+#work > div:not(:first-child) {
+    margin-top: 50px;
+}
+
+#work ul {
+    list-style-type: none;
+    line-height: 1.5;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+}
+
+#work i {
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 499px) {
+    #bio h1 {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    #work h1 {
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    #bio p {
+        font-size: 15px;
+    }
+
+    #work > div {
+        margin-bottom: 35px;
+    }
+
+    #work > div:not(:first-child) {
+        margin-top: 35px;
+    }
+}

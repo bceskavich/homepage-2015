@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row" id="resume">
+
+  <!-- Info Section -->
+  <div class="col-sm-4 info-sections">
+    <h1>Education</h1>
+    <div class="resume-item">
+      <h4>M.S. Information Management</h4>
+      <p><em>Syracuse University / Graduating Dec. 2015</em></p>
+      <ul>
+        <li>Engagement Fellow</li>
+      </ul>
+    </div>
+
+    <div class="resume-item">
+      <h4>B.S. Information Management</h4>
+      <h4 id="second">B.A. Political Science</h4>
+      <p><em>Syracuse University / Graduated May 2014</em></p>
+      <ul>
+        <li>Summa Cum Laude</li>
+        <li><a href="http://remembrance.syr.edu/">Remembrance Scholar</a></li>
+      </ul>
+    </div>
+
+    <hr />
+    <p>Download a PDF copy <a href="{{url_for('static', filename='files/bc.pdf')}}">here</a>.</p>
+  </div><!-- / info section -->
+
+  <!-- ===== Work Section ===== -->
+  <div class="col-sm-8 work-sections">
+    <!-- Experience -->
+    <h1>Experience</h1>
+    <div class="resume-item">
+      <h4><a href="http://www.madebymany.com/">Made by Many</a> / Product Engineering Intern</h4>
+      <p><em>New York City / May 2015 - Present</em></p>
+      <ul>
+        <li>Work as software developer to produce robust software for Made by Many clients</li>
+        <li>Build a final project independently with two other interns as part of the summer intern team</li>
+      </ul>
+    </div>
+    <div class="resume-item">
+      <h4><a href="http://bits.ischool.syr.edu/">BITS Lab</a> / Faculty Assistant</h4>
+      <p><em>Syracuse, NY / September 2014 - Present</em></p>
+      <ul>
+        <li>Lead developer of <a href="https://github.com/bitslabsyr/stack">STACKS</a>, a toolkit written in Python for researchers to collect and analyze large social media data sets from Twitter’s Streaming API and Facebook’s Graph API</li>
+        <li>Contracted by the World Bank to design and implement custom data collection processes</li>
+        <li>Collaborate with research team to define goals, analyze social data, and produce visualizations</li>
+      </ul>
+    </div>
+    <div class="resume-item">
+      <h4><a href="http://www.hackupstate.com/">Hack Upstate</a> / Fellow</h4>
+      <p><em>Syracuse, NY / June 2014 - Present</em></p>
+      <ul>
+        <li>Organize Hack Upstate’s biannual hackathon in Syracuse, New York</li>
+        <li>Lead partner relations with AT&amp;T, collaborating to produce four virtual hackathons throughout the upstate New York region to date</li>
+        <li>Lead developer of Hack Upstate’s digital content and web presence</li>
+        <li>Provide technical support to partners and attendees at all events</li>
+      </ul>
+    </div>
+    <div class="resume-item">
+      <h4><a href="http://www.twitter.com/">Twitter</a> / Technical Program Manager Intern</h4>
+      <p><em>San Francisco, CA / May 2014 - August 2014</em></p>
+      <ul>
+        <li>Lead cross-functional teams in Twitter’s Consumer Product Engineering group to deliver strategic projects and programs in an Agile environment</li>
+        <li>Shipped two iterative feature improvements to Twitter Search for logged-out web users</li>
+        <li>Established a program foundation for the restructuring of Twitter’s experimentation framework</li>
+        <li>Interfaced with Twitter’s custom Scala stack and front-end framework</li>
+      </ul>
+    </div>
+    <div class="resume-item">
+      <h4><a href="http://www.evernote.com/">Evernote</a> / Developer Relations Intern</h4>
+      <p><em>Redwood City, CA / May 2013 - August 2013</em></p>
+      <ul>
+        <li>Served as a project lead for the Evernote Devcup, crafting communications and digital content for an international developer competition with 570 participants</li>
+        <li>Coordinated four developer events in the San Francisco Bay Area to promote the Evernote API</li>
+        <li>Developed and implemented components of the Evernote Accelerator incubator program</li>
+        <li>Implemented curriculum updates to the Evernote Developers homepage</li>
+      </ul>
+    </div>
+    <div class="resume-item">
+      <h4><a href="http://universityunion.syr.edu/">University Union</a> / President</h4>
+      <p><em>Syracuse, NY / September 2010 - May 2014</em></p>
+      <ul>
+        <li>Lead SU’s Official Programming Board in charge of fifty large-scale events annually</li>
+        <li>Coordinated the first student-run music festival in the United States, two record selling concerts, and a nationally routed stop of Macklemore &amp; Ryan Lewis’ World Tour</li>
+        <li>Built relationships with university officials, press, and industry professionals</li>
+        <li>Managed a member base of over 500 and an annual budget of over $1 million</li>
+      </ul>
+    </div>
+    <!-- / Experience -->
+
+    <br />
+
+    <!-- Research & Projects -->
+    <h1>Research &amp; Projects</h1>
+    <div class="resume-item">
+      <h4><a href="http://nexis.ischool.syr.edu/">NEXIS Research Lab</a> / Member</h4>
+      <p><em>Syracuse, NY / January 2014 - Present</em></p>
+      <ul>
+        <li>Research and build web projects for the SU iSchool’s student-powered research lab, including:</li>
+        <li><a href="http://drought.ceskavich.com/">Drought in America</a> - a visualization of drought trends in the United States, built with D3 and R</li>
+        <li><a href="http://grov.ceskavich.com/">Grov</a> - a visualization of Twitter networks at Syracuse University, using D3, Python, and Flask</li>
+        <li><strong>Bulletin</strong> - a news aggregator that finds content related to stories in a user’s Pocket account</li>
+      </ul>
+    </div>
+    <div class="resume-item">
+      <h4>Data By The Lake</h4>
+      <p><em>Syracuse, NY &amp; Chicago, IL / January 2015 - May 2015</em></p>
+      <ul>
+        <li>Work in groups with Hyatt Hotels and the City of Chicago to analyze and mine tens of millions of lines of company data to drive business decisions</li>
+        <li>Apply machine learning algorithms and toolsets to produce actionable results for the clients</li>
+        <li>Presenting final reports to company representatives in May 2015, including models to help drive future business decisions</li>
+      </ul>
+    </div>
+    <!-- / Research & projects -->
+  </div><!-- / work section -->
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+  $(function(){
+    $(".resume-nav").attr("class", "active");
+  });
+</script>
+{% endblock %}

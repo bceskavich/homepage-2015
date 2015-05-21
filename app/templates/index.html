@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="home">
+  <h1>Hey, it's <span id="name">Billy!</span></h1>
+  <p id="email">bceskavich <strong>[at]</strong> gmail.com</p>
+
+  <ul>
+    <li>Product Engineering Intern at <a href="http://madebymany.com/" target="_blank">Made by Many</a>.</li>
+    <li>Developer at <a href="http://bits.ischool.syr.edu/" target="_blank">BITS Lab</a>.</li>
+    <li>Engagement Fellow at the <a href="http://ischool.syr.edu/" target="_blank">Syracuse University iSchool</a>.</li>
+    <li>Sock enthusiast.</li>
+  </ul>
+
+  <ul id="homeLinks">
+    <li><a class="ion-social-github" href="https://github.com/bceskavich/"></a></li>
+    <li><a class="ion-social-linkedin" href="https://www.linkedin.com/in/ceskavich"></a></li>
+    <li><a class="ion-social-twitter" href="https://twitter.com/ceskavich"></a></li>
+    <li><a class="ion-camera" href="https://instagram.com/ceskavich"></a></li>
+  </ul>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+  $(function(){
+    $(".brand-nav").attr("class", "active");
+  });
+</script>
+{% endblock %}
