@@ -108,7 +108,7 @@ nav li {
 .navItemsMobile {
     float: none;
     position: relative;
-    top: -226px;
+    top: -225px;
     transition: 0.2s;
     width: 100%;
 }
@@ -136,7 +136,7 @@ nav li {
 nav,
 .content {
     position: relative;
-    top: -226px;
+    top: -225px;
     transition: 0.2s;
 }
 
