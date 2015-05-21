@@ -2,4 +2,4 @@
 
 _Live at [www.ceskavich.com](http://www.ceskavich.com/)._
 
-Built using Flask + ReactJS.
+Built using Flask.
