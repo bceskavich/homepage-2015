@@ -302,6 +302,16 @@ nav,
     font-size: 18px;
 }
 
+#bio #cred {
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+#bio #cred a {
+    font-weight: normal;
+}
+
 #work p {
     font-size: 15px;
 }
@@ -339,6 +349,10 @@ nav,
 
     #bio p {
         font-size: 15px;
+    }
+
+    #bio #cred {
+        font-size: 12px;
     }
 
     #work > div {
