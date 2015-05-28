@@ -54,7 +54,7 @@ nav,
 /* ========== TOP NAV ========== */
 
 nav {
-    font-family: "Alegreya Sans";
+    font-family: "Cabin";
 }
 
 nav ul {
@@ -66,7 +66,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #333;
-    font-size: 25px;
+    font-size: 23px;
     margin: 15px 0px;
     display: block;
     font-weight: normal;
@@ -185,7 +185,7 @@ nav,
 #home h1 {
     margin: 0px;
     font-weight: 700;
-    font-family: "Alegreya Sans";
+    font-family: "Cabin";
     font-size: 70px;
 }
 
@@ -289,7 +289,7 @@ nav,
 #work h1 {
     margin: 0px;
     padding: 0px 0px 15px 0px;
-    font-family: "Alegreya Sans";
+    font-family: "Cabin";
     font-size: 35px;
 }
 
